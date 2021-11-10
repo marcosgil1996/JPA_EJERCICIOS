@@ -3,10 +3,12 @@ package marcos.es.eoi;
 import marcos.es.eoi.entity.Alumno;
 import marcos.es.eoi.repository.AlumnoRepository;
 import marcos.es.eoi.repository.AlumnoRepositoryJPAImpl;
+import marcos.es.eoi.repository.MyAbstractRepository;
+import marcos.es.eoi.repository.MyRepository;
 
 public class Main {
 	private static final int SALIR = 0, INSERTAR = 1, BUSCAR = 2, ELIMINAR = 3, MODIFICAR = 4;
-	private static AlumnoRepository repository;
+	private static MyAbstractRepository<Alumno> repository;
 	public static void main(String[] args) {
 		boolean salir = false;
 		int opcion = 0;
@@ -70,7 +72,7 @@ public class Main {
 			apellidos = Utilidades.pedirString("INSERTA LOS APELLIDOS DEL ALUMNO");
 			
 			//Crear objeto alumno con los datos
-			Alumno aluUpdate = new Alumno(idAlu,dni,apellidos);
+			Alumno aluUpdate = new Alumno(dni,apellidos);
 			
 			//Llamar al repository update
 			repository.update(aluUpdate);
