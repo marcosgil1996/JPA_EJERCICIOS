@@ -11,6 +11,7 @@
 			<property name="hibernate.connection.username" value="root" />
 			<property name="hibernate.connection.password" value="1234" />
 			<property name="hibernate.archive.autodetection" value="class" />
+			<!-- Muestra SQL por consola -->
 			<property name="hibernate.show_sql" value="true" />
 		</properties>
 	</persistence-unit>
