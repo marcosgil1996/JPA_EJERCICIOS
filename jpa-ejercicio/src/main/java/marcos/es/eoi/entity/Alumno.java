@@ -21,10 +21,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "alumnos", schema = "beca")
-public class Alumno implements Serializable{
-	
-	private static final long serialVersionUID = 1L;
-	
+public class Alumno{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="id")
