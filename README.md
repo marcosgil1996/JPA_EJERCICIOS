@@ -11,6 +11,9 @@ La JDK de java utilizada es la 1.8, la cual podemos cambiar en cualquier momento
     USE beca;
     CREATE TABLE alumnos( ID INT NOT NULL auto_increment, DNI VARCHAR(9),APELLIDOS VARCHAR(50),    PRIMARY KEY(ID) );
     
+
+ 4. Recuerda modificar el archivo persistence con la configuracion correcta de user and password por que puede ser que tengas un user y password distintos a los mios.
+    
 **
 
 ## PD: Recordar que esto es una prueba la primary key de la tabla alumnos deberia de haber sido DNI, pero para este ejercicio como era para probar las funciones de JPA, no se ha tenido en cuenta eso.
