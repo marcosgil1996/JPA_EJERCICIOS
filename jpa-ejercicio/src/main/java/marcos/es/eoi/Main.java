@@ -114,6 +114,11 @@ public class Main {
 		//Llamar al repository para guardar el alu
 		repository.save(aluInsert);
 		
+		/***
+		 * Esta parte de código la dejo comentada por que al ser la PK el ID,
+		 * a parte que el ID es autoincrementable.
+		 * Se ve que no deja buscar por DNI por que DNI no es PK(Primary key).
+		 */
 		//Si el alumno no existe
 		/*if(repository.findByDni(aluInsert.getDni()).equals(null)) {
 			//Llamar al repository para guardar el alu
