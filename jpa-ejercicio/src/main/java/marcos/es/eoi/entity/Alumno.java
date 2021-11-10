@@ -34,7 +34,7 @@ public class Alumno implements Serializable{
 	private String dni;
 	
 	@Column(name = "apellidos")
-	private String apellidos;	
+	private String apellidos;
 	
 	public Alumno(String dni, String apellidos) {
 		this.dni = dni;
@@ -46,6 +46,6 @@ public class Alumno implements Serializable{
 		return 	"ID:\t"+this.getId()+"\n"+
 			 	"APELLIDOS:\t"+this.getApellidos()+"\n"+
 				"DNI:\t"+this.getDni();
-}
+	}
 
 }

@@ -48,10 +48,4 @@ public class AlumnoRepositoryJPAImpl implements AlumnoRepository{
 		em.getTransaction().commit();
 		return null;
 	}
-
-
-
-	
-
-
 }
